@@ -188,7 +188,8 @@ export default function SkillsSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Crafting digital experiences with cutting-edge technologies and creative problem-solving
+            Crafting digital experiences with cutting-edge technologies and
+            creative problem-solving
           </motion.p>
 
           <motion.div
@@ -202,7 +203,7 @@ export default function SkillsSection() {
           </motion.div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-1 gap-12 ">
           {/* Technical Skills */}
           <motion.div
             className={`backdrop-blur-2xl rounded-3xl p-8 sm:p-10 lg:p-12 border-2 relative overflow-hidden ${
@@ -232,11 +233,19 @@ export default function SkillsSection() {
               viewport={{ once: true }}
             >
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mr-5 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
                 </svg>
               </div>
-              <h3 className={`text-3xl sm:text-4xl font-bold ${theme === "dark" ? "text-white" : "text-slate-800"}`}>
+              <h3
+                className={`text-3xl sm:text-4xl font-bold ${
+                  theme === "dark" ? "text-white" : "text-slate-800"
+                }`}
+              >
                 {t("technicalSkills")}
               </h3>
             </motion.div>
@@ -294,7 +303,9 @@ export default function SkillsSection() {
                   {/* Enhanced Tooltip */}
                   <motion.div
                     className={`absolute -top-16 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-xl text-xs font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20 ${
-                      theme === "dark" ? "bg-gray-800 text-white shadow-xl" : "bg-gray-900 text-white shadow-xl"
+                      theme === "dark"
+                        ? "bg-gray-800 text-white shadow-xl"
+                        : "bg-gray-900 text-white shadow-xl"
                     }`}
                     initial={{ opacity: 0, y: 10, scale: 0.8 }}
                     whileHover={{ opacity: 1, y: 0, scale: 1 }}
@@ -336,11 +347,19 @@ export default function SkillsSection() {
               viewport={{ once: true }}
             >
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mr-5 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className={`text-3xl sm:text-4xl font-bold ${theme === "dark" ? "text-white" : "text-slate-800"}`}>
+              <h3
+                className={`text-3xl sm:text-4xl font-bold ${
+                  theme === "dark" ? "text-white" : "text-slate-800"
+                }`}
+              >
                 {t("softSkills")}
               </h3>
             </motion.div>
@@ -418,10 +437,26 @@ export default function SkillsSection() {
             >
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                 {[
-                  { label: "Projects", value: "19+", color: "from-blue-500 to-cyan-500" },
-                  { label: "Experience", value: "2+ Years", color: "from-purple-500 to-pink-500" },
-                  { label: "Technologies", value: "20+", color: "from-green-500 to-emerald-500" },
-                  { label: "Satisfaction", value: "100%", color: "from-orange-500 to-red-500" },
+                  {
+                    label: "Projects",
+                    value: "19+",
+                    color: "from-blue-500 to-cyan-500",
+                  },
+                  {
+                    label: "Experience",
+                    value: "2+ Years",
+                    color: "from-purple-500 to-pink-500",
+                  },
+                  {
+                    label: "Technologies",
+                    value: "20+",
+                    color: "from-green-500 to-emerald-500",
+                  },
+                  {
+                    label: "Satisfaction",
+                    value: "100%",
+                    color: "from-orange-500 to-red-500",
+                  },
                 ].map((stat, index) => (
                   <motion.div
                     key={stat.label}
@@ -439,7 +474,9 @@ export default function SkillsSection() {
                       {stat.value}
                     </motion.div>
                     <div
-                      className={`text-xs sm:text-sm font-medium ${theme === "dark" ? "text-gray-400" : "text-slate-500"}`}
+                      className={`text-xs sm:text-sm font-medium ${
+                        theme === "dark" ? "text-gray-400" : "text-slate-500"
+                      }`}
                     >
                       {stat.label}
                     </div>
@@ -451,5 +488,5 @@ export default function SkillsSection() {
         </div>
       </div>
     </motion.section>
-  )
+  );
 }
