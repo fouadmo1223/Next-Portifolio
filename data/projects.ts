@@ -12,6 +12,7 @@ export const projects = [
     videoId: "freeSmileModal",
     type: "code-video" as const,
     category: "webDevelopment",
+    videoSrc: "/Media1.mp4",
   },
   {
     id: 2,

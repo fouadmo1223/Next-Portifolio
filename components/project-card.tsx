@@ -19,6 +19,7 @@ interface Project {
   videoId?: string;
   type: "code-video" | "code-demo";
   category: string;
+  videoSrc?: string;
 }
 
 interface ProjectCardProps {
@@ -193,7 +194,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           title={`${project.title} Demo`}
-          videoSrc="/placeholder-video.mp4" // Optional: use videoId to fetch dynamic video
+          videoSrc={project?.videoSrc || ""} // Optional: use videoId to fetch dynamic video
         />
       )}
     </>
