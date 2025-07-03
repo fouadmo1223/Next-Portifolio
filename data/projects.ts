@@ -33,6 +33,7 @@ export const projects = [
     videoId: "boutiqueModal",
     type: "code-video" as const,
     category: "ecommerce",
+    videoSrc: "/project 3.mp4",
   },
   {
     id: 3,
@@ -254,6 +255,7 @@ export const projects = [
     videoId: "nextEcommerceModal",
     type: "code-video" as const,
     category: "ecommerce",
+    videoSrc: "/NextFreshCart.mp4",
   },
   {
     id: 19,
