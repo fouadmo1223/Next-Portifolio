@@ -45,6 +45,7 @@ export const projects = [
     videoId: "dashboard2Modal2",
     type: "code-video" as const,
     category: "ecommerce",
+    videoSrc: "/freshCart.mp4",
   },
   {
     id: 4,
@@ -57,6 +58,7 @@ export const projects = [
     videoId: "dashboard2Modal",
     type: "code-video" as const,
     category: "dashboard",
+    videoSrc: "/dashboard2.mp4",
   },
   {
     id: 5,
@@ -230,6 +232,7 @@ export const projects = [
     videoId: "dashboardModal",
     type: "code-video" as const,
     category: "dashboard",
+    videoSrc: "/dashboard.mp4",
   },
   {
     id: 18,
