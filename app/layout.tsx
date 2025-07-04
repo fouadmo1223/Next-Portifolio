@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
           <LanguageProvider>
-            <div>{children}</div>
+            <div style={{ overflowX: "hidden" }}>{children}</div>
           </LanguageProvider>
         </ThemeProvider>
       </body>

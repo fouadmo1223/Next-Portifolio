@@ -1,6 +1,86 @@
 // app/data/projects.ts
 export const projects = [
   {
+    id: 21,
+    title: "Smart Student",
+    description:
+      "Explore an educational platform that connects expert teachers with high-quality content Access interactive presentations HD videos premium audio and study.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "NextAuth",
+      "MUI",
+      "Tailwind",
+      "ReactToastify",
+      "ReactIcons"
+    ],
+    image: "/smart.png?height=300&width=400",
+    codeLink: "https://github.com/fouadmo1223",
+    demoLink: "https://www.smartstudent.live/ar",
+    type: "code-demo" as const,
+    category: "next",
+
+  },
+  {
+    id: 22,
+    title: "Basket",
+    description:
+      " A modern and responsive eCommerce platform built with React.js , featuring a seamless shopping experience with product browsing, dynamic filtering",
+    technologies: [
+      "React.js",
+      "MUI",
+      "Tailwind",
+      "Context Api And Reducer",
+      "ReactToastify",
+      "ReactIcons"
+    ],
+    image: "/Basket.png?height=300&width=400",
+    codeLink: "https://github.com/YussefMo/e-commerce-web-masters",
+    demoLink: "https://e-commerce-web-masters-seven.vercel.app/",
+    type: "code-demo" as const,
+    category: "react",
+
+  },
+  {
+    id: 23,
+    title: "Book Api ",
+    description:
+      `Book API – Scalable Backend for Any Frontend 🛠️
+I’ve just finished building a production-ready, plug-and-play RESTful API designed to power any frontend`,
+    technologies: [
+      "Node.js",
+      "Express",
+      "MongoDB ",
+      "Mongoose ",
+      "JWT",
+      "JOI",
+    ],
+    image: "/book-api.jpeg?height=300&width=400",
+    codeLink: "https://github.com/fouadmo1223/Book-Api",
+    demoLink: "#",
+    type: "code-demo" as const,
+    category: "node",
+
+  },
+  {
+    id: 6,
+    title: "Book Store",
+    description: "Functional shopping cart with login and product management.",
+    technologies: [
+      "Next.js",
+      "Framer Motion",
+      "Swiper",
+      "Tailwind CSS",
+      "EmailJS",
+      "Lucide",
+    ],
+    image: "/bookStore.png?height=300&width=400",
+    codeLink: "https://github.com/fouadmo1223/Next-Book-Store",
+    demoLink: "https://next-book-store-xi.vercel.app/",
+    type: "code-demo" as const,
+    category: "next",
+  },
+  {
     id: 1,
     title: "FreeSmile",
     description:
@@ -11,7 +91,7 @@ export const projects = [
     demoLink: "#",
     videoId: "freeSmileModal",
     type: "code-video" as const,
-    category: "webDevelopment",
+    category: "html",
     videoSrc: "/Media1.mp4",
   },
   {
@@ -32,7 +112,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/boutique",
     videoId: "boutiqueModal",
     type: "code-video" as const,
-    category: "ecommerce",
+    category: "php",
     videoSrc: "/project3.mp4",
   },
   {
@@ -45,7 +125,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/React-E-commerce",
     videoId: "dashboard2Modal2",
     type: "code-video" as const,
-    category: "ecommerce",
+    category: "react php",
     videoSrc: "/freshCart.mp4",
   },
   {
@@ -58,9 +138,10 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Dashboard",
     videoId: "dashboard2Modal",
     type: "code-video" as const,
-    category: "dashboard",
+    category: "react",
     videoSrc: "/dashboard2.mp4",
   },
+
   {
     id: 5,
     title: "Weather App",
@@ -71,25 +152,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Weather-Website",
     demoLink: "https://fouadmo1223.github.io/Weather-Website/",
     type: "code-demo" as const,
-    category: "webDevelopment",
-  },
-  {
-    id: 6,
-    title: "Book Store",
-    description: "Functional shopping cart with login and product management.",
-    technologies: [
-      "Next.js",
-      "Framer Motion",
-      "Swiper",
-      "Tailwind CSS",
-      "EmailJS",
-      "Lucide",
-    ],
-    image: "/bookStore.png?height=300&width=400",
-    codeLink: "https://github.com/fouadmo1223/Next-Book-Store",
-    demoLink: "https://next-book-store-xi.vercel.app/",
-    type: "code-demo" as const,
-    category: "ecommerce",
+    category: "react",
   },
   {
     id: 7,
@@ -111,7 +174,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/TechSphere",
     demoLink: "https://tech-sphere-rogg.vercel.app/",
     type: "code-demo" as const,
-    category: "webDevelopment",
+    category: "next",
   },
   {
     id: 8,
@@ -122,7 +185,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Bondi",
     demoLink: "https://fouadmo1223.github.io/Bondi/",
     type: "code-demo" as const,
-    category: "landingPage",
+    category: "html",
   },
   {
     id: 9,
@@ -135,7 +198,7 @@ export const projects = [
     demoLink:
       "https://fouadmo1223.github.io/Web-Masters-Landing-CSS-HTML-Only/",
     type: "code-demo" as const,
-    category: "landingPage",
+    category: "html",
   },
   {
     id: 10,
@@ -146,7 +209,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Tailwind-Movie-Landing",
     demoLink: "https://fouadmo1223.github.io/Tailwind-Movie-Landing/",
     type: "code-demo" as const,
-    category: "landingPage",
+    category: "html",
   },
   {
     id: 11,
@@ -157,7 +220,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Tailwind-To-Do",
     demoLink: "https://fouadmo1223.github.io/Tailwind-To-Do/",
     type: "code-demo" as const,
-    category: "webDevelopment",
+    category: "html",
   },
   {
     id: 12,
@@ -176,7 +239,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Neo",
     demoLink: "https://fouadmo1223.github.io/Neo/",
     type: "code-demo" as const,
-    category: "landingPage",
+    category: "html",
   },
   {
     id: 13,
@@ -187,7 +250,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Softy",
     demoLink: "https://fouadmo1223.github.io/Softy/",
     type: "code-demo" as const,
-    category: "landingPage",
+    category: "html",
   },
   {
     id: 14,
@@ -198,7 +261,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/To-Do",
     demoLink: "https://fouadmo1223.github.io/To-Do/",
     type: "code-demo" as const,
-    category: "webDevelopment",
+    category: "html",
   },
   {
     id: 15,
@@ -209,7 +272,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/React-To-Do",
     demoLink: "https://fouadmo1223.github.io/React-To-Do/",
     type: "code-demo" as const,
-    category: "webDevelopment",
+    category: "react",
   },
   {
     id: 16,
@@ -220,7 +283,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Your-Country",
     demoLink: "https://your-country.vercel.app/",
     type: "code-demo" as const,
-    category: "webDevelopment",
+    category: "react",
   },
   {
     id: 17,
@@ -232,7 +295,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/S-Dashboard",
     videoId: "dashboardModal",
     type: "code-video" as const,
-    category: "dashboard",
+    category: "react",
     videoSrc: "/dashboard.mp4",
   },
   {
@@ -254,7 +317,7 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/Next-E-commerce",
     videoId: "nextEcommerceModal",
     type: "code-video" as const,
-    category: "ecommerce",
+    category: "next",
     videoSrc: "/NextFreshCart.mp4",
   },
   {
@@ -266,6 +329,6 @@ export const projects = [
     codeLink: "https://github.com/fouadmo1223/cart",
     demoLink: "https://fouadmo1223.github.io/cart",
     type: "code-demo" as const,
-    category: "ecommerce",
+    category: "react",
   },
 ];

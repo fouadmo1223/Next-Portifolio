@@ -33,7 +33,10 @@ export default function Portfolio() {
   const filteredProjects =
     activeFilter === "allProjects"
       ? projects
-      : projects.filter((p) => p.category === activeFilter);
+      : projects.filter((p) =>
+        p.category.split(" ").includes(activeFilter)
+      );
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -345,10 +348,11 @@ export default function Portfolio() {
           >
             {[
               { key: "allProjects", label: t("allProjects") },
-              { key: "webDevelopment", label: t("webDevelopment") },
-              { key: "ecommerce", label: t("ecommerce") },
-              { key: "dashboard", label: t("dashboard") },
-              { key: "landingPage", label: t("landingPage") },
+              { key: "html", label: t("html") },
+              { key: "react", label: t("react") },
+              { key: "next", label: t("next") },
+              { key: "php", label: t("php") },
+              { key: "node", label: t("node") },
             ].map((filter) => (
               <motion.button
                 key={filter.key}
