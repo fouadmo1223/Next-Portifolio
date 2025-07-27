@@ -12,14 +12,13 @@ export const projects = [
       "MUI",
       "Tailwind",
       "ReactToastify",
-      "ReactIcons"
+      "ReactIcons",
     ],
     image: "/smart.png?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223",
     demoLink: "https://www.smartstudent.live/ar",
     type: "code-demo" as const,
     category: "next",
-
   },
   {
     id: 22,
@@ -32,35 +31,25 @@ export const projects = [
       "Tailwind",
       "Context Api And Reducer",
       "ReactToastify",
-      "ReactIcons"
+      "ReactIcons",
     ],
     image: "/Basket.png?height=300&width=400",
     codeLink: "https://github.com/YussefMo/e-commerce-web-masters",
     demoLink: "https://e-commerce-web-masters-seven.vercel.app/",
     type: "code-demo" as const,
     category: "react",
-
   },
   {
     id: 23,
     title: "Book Api ",
-    description:
-      `Book API – Scalable Backend for Any Frontend 🛠️
+    description: `Book API – Scalable Backend for Any Frontend 🛠️
 I’ve just finished building a production-ready, plug-and-play RESTful API designed to power any frontend`,
-    technologies: [
-      "Node.js",
-      "Express",
-      "MongoDB ",
-      "Mongoose ",
-      "JWT",
-      "JOI",
-    ],
+    technologies: ["Node.js", "Express", "MongoDB ", "Mongoose ", "JWT", "JOI"],
     image: "/book-api.jpeg?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223/Book-Api",
     demoLink: "#",
     type: "code-demo" as const,
     category: "node",
-
   },
   {
     id: 6,
@@ -88,11 +77,11 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"],
     image: "/freesmile.png?height=300&width=400",
     codeLink: "https://github.com/alimelgohary/alimelgohary.github.io",
-    demoLink: "#",
+    demoLink:
+      "https://drive.google.com/file/d/176beF2jRehpeuT_IMToK8DFIuZano0B5/view?usp=drive_link",
     videoId: "freeSmileModal",
-    type: "code-video" as const,
+    type: "code-demo" as const,
     category: "html",
-    videoSrc: "/Media1.mp4",
   },
   {
     id: 2,
@@ -110,10 +99,11 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     ],
     image: "/Botique.png?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223/boutique",
+    demoLink:
+      "https://drive.google.com/file/d/1sh3hh7osOkI31qUW7-4VlpmvFX8SBt7T/view?usp=drive_link",
     videoId: "boutiqueModal",
-    type: "code-video" as const,
+    type: "code-demo" as const,
     category: "php",
-    videoSrc: "/project3.mp4",
   },
   {
     id: 3,
@@ -123,8 +113,10 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     technologies: ["PHP", "MySQL", "React", "Redux", "Chart.js", "Material UI"],
     image: "/freshCart.png?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223/React-E-commerce",
+    demoLink:
+      "https://drive.google.com/file/d/1pr07xkOsGp-sqvIGLNKEEYFuSJRFGpOu/view?usp=drive_link",
     videoId: "dashboard2Modal2",
-    type: "code-video" as const,
+    type: "code-demo" as const,
     category: "react php",
     videoSrc: "/freshCart.mp4",
   },
@@ -136,8 +128,10 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     technologies: ["React", "Redux", "Chart.js", "Material UI"],
     image: "/auth.png?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223/Dashboard",
+    demoLink:
+      "https://drive.google.com/file/d/1Ka2BDj-o-7q305IhsWBaHgsNdrUkuCB5/view?usp=drive_link",
     videoId: "dashboard2Modal",
-    type: "code-video" as const,
+    type: "code-demo" as const,
     category: "react",
     videoSrc: "/dashboard2.mp4",
   },
@@ -293,8 +287,10 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     technologies: ["React", "Material UI"],
     image: "/dashboard1.png?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223/S-Dashboard",
+    demoLink:
+      "https://drive.google.com/file/d/1rCPt9zrGyc-pbB1DsnVEfLrS7zRcjrc4/view?usp=drive_link",
     videoId: "dashboardModal",
-    type: "code-video" as const,
+    type: "code-demo" as const,
     category: "react",
     videoSrc: "/dashboard.mp4",
   },
@@ -315,8 +311,10 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     ],
     image: "/nextecommerce.png?height=300&width=400",
     codeLink: "https://github.com/fouadmo1223/Next-E-commerce",
+    demoLink:
+      "https://drive.google.com/file/d/1YQWaj_kE86YAv2c0Jka9mnckWe1FswCl/view?usp=drive_link",
     videoId: "nextEcommerceModal",
-    type: "code-video" as const,
+    type: "code-demo" as const,
     category: "next",
     videoSrc: "/NextFreshCart.mp4",
   },
