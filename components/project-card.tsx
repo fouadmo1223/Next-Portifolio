@@ -131,15 +131,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {tech}
               </motion.span>
             ))}
-            {project.technologies.length > 4 && (
-              <span
-                className={`text-xs px-2 py-1 ${
-                  theme === "dark" ? "text-gray-400" : "text-slate-500"
-                }`}
-              >
-                +{project.technologies.length - 4} more
-              </span>
-            )}
           </motion.div>
 
           <motion.div
