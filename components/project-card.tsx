@@ -119,7 +119,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {project.technologies.slice(0, 4).map((tech, index) => (
+            {project.technologies.map((tech, index) => (
               <motion.span
                 key={tech}
                 className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-400 px-2 py-1 rounded text-xs"
