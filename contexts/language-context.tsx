@@ -39,6 +39,8 @@ const translations = {
       "Developed app solutions using JavaScript, SQL, PHP, Laravel, Bootstrap, resulting in 30% improvement in website performance through code optimization.",
     da3emDesc:
       "Contributed to building a dynamic Smart Student platform using React and Next.js, with real-time quiz modules and Zoom integration.",
+    neoxeroDesc:
+      "I specialize in frontend development, building modern and responsive eCommerce interfaces using React. My focus is on creating fast, user-friendly, and visually engaging shopping experiences by leveraging tools like Tailwind CSS, Framer Motion, and the React ecosystem. I work on customizing Zid themes and integrating them with React to deliver seamless, conversion-focused online stores that align with each brand’s identity.",
 
     // Skills
     skillsTitle: "Skills & Technologies",
@@ -52,6 +54,7 @@ const translations = {
     react: "React.js",
     next: "Next.js",
     php: "PHP | laravel ",
+    zid: "Zid ",
     node: "Nodejs | Express.js",
     code: "Code",
     demo: "Demo",
@@ -113,6 +116,7 @@ const translations = {
     next: "Next.js",
     php: "PHP | laravel ",
     node: "Nodejs | Express.js",
+    zid: "Zid ",
     code: "الكود",
     demo: "العرض",
     video: "فيديو",
@@ -131,7 +135,7 @@ const translations = {
     adaptability: "القدرة على التكيف",
     timeManagement: "إدارة الوقت",
   },
-}
+};
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 

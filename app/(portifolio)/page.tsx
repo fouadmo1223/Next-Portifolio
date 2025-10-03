@@ -353,6 +353,7 @@ export default function Portfolio() {
               { key: "next", label: t("next") },
               { key: "php", label: t("php") },
               { key: "node", label: t("node") },
+              { key: "zid", label: t("zid") },
             ].map((filter) => (
               <motion.button
                 key={filter.key}

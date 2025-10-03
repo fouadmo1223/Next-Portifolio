@@ -13,7 +13,16 @@ const experiences = [
     location: "Egypt",
     period: "Oct 2023 - Jul 2024",
     description: "createvioDesc",
-    technologies: ["JavaScript", "SQL", "PHP", "Laravel", "Bootstrap", "AOS", "Sweet Alert", "PHPflasher"],
+    technologies: [
+      "JavaScript",
+      "SQL",
+      "PHP",
+      "Laravel",
+      "Bootstrap",
+      "AOS",
+      "Sweet Alert",
+      "PHPflasher",
+    ],
   },
   {
     id: 2,
@@ -22,9 +31,30 @@ const experiences = [
     location: "Egypt",
     period: "Apr 2025 - Jun 2025",
     description: "da3emDesc",
-    technologies: ["React", "Next.js", "Tailwind CSS", "Material UI", "Zoom SDK"],
+    technologies: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Material UI",
+      "Zoom SDK",
+    ],
   },
-]
+  {
+    id: 3,
+    title: "frontEndDeveloper",
+    company: "Neoxero",
+    location: "Mansoura, EG",
+    period: "Jun 2025 - Oct 2025",
+    description: "neoxeroDesc",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Zid",
+      "eCommerce UI/UX",
+    ],
+  },
+];
 
 export default function Timeline() {
   const { t } = useLanguage()
