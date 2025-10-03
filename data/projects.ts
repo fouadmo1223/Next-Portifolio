@@ -1,7 +1,7 @@
 // app/data/projects.ts
 export const projects = [
   {
-    id: 21,
+    id: 45,
     title: "Smart Student",
     description:
       "Explore an educational platform that connects expert teachers with high-quality content Access interactive presentations HD videos premium audio and study.",
@@ -400,7 +400,7 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     category: "node",
   },
   {
-    id: 28,
+    id:28,
     title: "Ribal Store",
     description: "An Ecommerce Store for Ribal for seeling House Needs",
     technologies: ["React", "Shadcn", "Tailwind", "Redux"],
