@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import {
   Github,
   Linkedin,
@@ -17,11 +18,28 @@ import {
 import { useLanguage } from "@/contexts/language-context";
 import { useTheme } from "@/contexts/theme-context";
 
-import Navigation from "@/components/navigation";
-import Timeline from "@/components/timeline";
-import SkillsSection from "@/components/skills-section";
-import ProjectCard from "@/components/project-card";
-import ContactForm from "@/components/contact-form";
+
+const Navigation = dynamic(() => import("@/components/navigation"), {
+  ssr: false, // Optional: disable server-side rendering if needed
+  loading: () => <div>Loading navigation...</div>,
+});
+
+const Timeline = dynamic(() => import("@/components/timeline"), {
+  loading: () => <div>Loading timeline...</div>,
+});
+
+const SkillsSection = dynamic(() => import("@/components/skills-section"), {
+  loading: () => <div>Loading skills...</div>,
+});
+
+const ProjectCard = dynamic(() => import("@/components/project-card"), {
+  loading: () => <div>Loading projects...</div>,
+});
+
+const ContactForm = dynamic(() => import("@/components/contact-form"), {
+  loading: () => <div>Loading contact form...</div>,
+});
+
 
 import { projects } from "@/data/projects";
 
