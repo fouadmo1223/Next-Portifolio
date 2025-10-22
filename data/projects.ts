@@ -415,7 +415,7 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
     title: "Nano Care Store",
     description: "An Ecommerce Store for Nano Care ",
     technologies: ["React", "Shadcn", "Tailwind", "Redux"],
-    image: "/ribal.png?height=300&width=400",
+    image: "/nano.png?height=300&width=400",
     codeLink: "#",
     demoLink: "https://nannocare.net/",
     type: "code-demo" as const,
