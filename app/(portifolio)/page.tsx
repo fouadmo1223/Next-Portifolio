@@ -20,7 +20,6 @@ import { useTheme } from "@/contexts/theme-context";
 
 
 const Navigation = dynamic(() => import("@/components/navigation"), {
-  ssr: false, // Optional: disable server-side rendering if needed
   loading: () => <div>Loading navigation...</div>,
 });
 

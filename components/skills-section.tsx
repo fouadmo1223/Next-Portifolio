@@ -4,124 +4,66 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 import { useTheme } from "@/contexts/theme-context"
+import { Zap, Users, RefreshCw, Clock } from "lucide-react";
 
 const technicalSkills = [
-  { name: "HTML5", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" },
-  { name: "CSS3", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" },
-  {
-    name: "JavaScript",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-  },
-  {
-    name: "TypeScript",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-  },
-  { name: "React", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" },
-  {
-    name: "Next.js",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-  },
-  { name: "Redux", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" },
-  {
-    name: "Node.js",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-  },
-  { name: "PHP", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" },
-  {
-    name: "Laravel",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain.svg",
-  },
-  { name: "MySQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" },
-  {
-    name: "MongoDB",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "Bootstrap",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg",
-  },
-  { name: "Tailwind CSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
-  {
-    name: "jQuery",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg",
-  },
-  { name: "Git", icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
-  {
-    name: "Docker",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
-  },
-  { name: "Vite", icon: "https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-icon.svg" },
-  {
-    name: "Material UI",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
-  },
-  {
-    name: "Express",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
-  },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" },
+  { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" },
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" },
+  { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" },
+  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" },
+  { name: "jQuery", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain.svg" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" },
+  { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" },
+  { name: "Vite", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vite.svg" },
+  { name: "Material UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg" },
+  { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { name: "JWT", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jsonwebtokens.svg" },
+  { name: "Socket.IO", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg" },
+  { name: "ShadCN UI", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shadcn.svg" }, // placeholder
+  { name: "Chakra UI", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/chakraui.svg" },
+  { name: "Odoo", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/odoo.svg" },
 ]
-
 const softSkills = [
   {
     name: "problemSolving",
-    icon: "https://img.icons8.com/fluency/96/problem-solving.png",
+    icon: <Zap size={48} />, // Example: lightning bolt for problem-solving
     description: "Analytical thinking and creative solutions",
   },
   {
     name: "teamwork",
-    icon: "https://img.icons8.com/fluency/96/collaboration.png",
+    icon: <Users size={48} />, // Represents collaboration
     description: "Effective collaboration and communication",
   },
   {
     name: "adaptability",
-    icon: "https://img.icons8.com/fluency/96/change.png",
+    icon: <RefreshCw size={48} />, // Circular arrows for flexibility
     description: "Quick learning and flexibility",
   },
   {
     name: "timeManagement",
-    icon: "https://img.icons8.com/fluency/96/time-management.png",
+    icon: <Clock size={48} />, // Clock for time management
     description: "Efficient project planning and execution",
   },
-]
+];
 
 export default function SkillsSection() {
   const { t } = useLanguage()
   const { theme } = useTheme()
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.03,
-      },
-    },
-  }
+ 
 
-  const itemVariants = {
-    hidden: { y: 40, opacity: 0, scale: 0.8 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.7,
-        ease: [0.25, 0.46, 0.45, 0.94],
-      },
-    },
-  }
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.9,
-        ease: [0.25, 0.46, 0.45, 0.94],
-      },
-    },
-  }
+
 
   return (
     <motion.section
@@ -140,11 +82,7 @@ export default function SkillsSection() {
             x: [0, 50, 0],
             y: [0, -30, 0],
           }}
-          transition={{
-            duration: 20,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "easeInOut",
-          }}
+         
         />
         <motion.div
           className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"
@@ -152,11 +90,7 @@ export default function SkillsSection() {
             x: [0, -50, 0],
             y: [0, 30, 0],
           }}
-          transition={{
-            duration: 25,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "easeInOut",
-          }}
+         
         />
       </div>
 
@@ -194,9 +128,7 @@ export default function SkillsSection() {
 
           <motion.div
             className="flex justify-center"
-            initial={{ width: 0, opacity: 0 }}
-            whileInView={{ width: 120, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
+     
             viewport={{ once: true }}
           >
             <div className="h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full" />
@@ -211,14 +143,10 @@ export default function SkillsSection() {
                 ? "bg-gradient-to-br from-white/5 to-white/10 border-white/10 shadow-2xl"
                 : "bg-gradient-to-br from-white/80 to-white/60 border-white/30 shadow-2xl"
             }`}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.02, y: -8 }}
-            transition={{ duration: 0.4 }}
+           
+       
           >
-            {/* Card Glow Effect */}
+         
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-3xl opacity-0"
               whileHover={{ opacity: 1 }}
@@ -252,9 +180,8 @@ export default function SkillsSection() {
 
             <motion.div
               className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
+           
+           
               viewport={{ once: true }}
             >
               {technicalSkills.map((skill, index) => (
@@ -265,13 +192,8 @@ export default function SkillsSection() {
                       ? "bg-white/5 hover:bg-white/15 border border-white/10 hover:border-white/30"
                       : "bg-black/5 hover:bg-black/15 border border-black/10 hover:border-black/30"
                   }`}
-                  variants={itemVariants}
-                  whileHover={{
-                    scale: 1.15,
-                    y: -12,
-                    rotateY: 8,
-                    transition: { duration: 0.4, ease: "easeOut" },
-                  }}
+             
+               
                   whileTap={{ scale: 0.95 }}
                 >
                   {/* Skill Icon Glow */}
@@ -325,12 +247,9 @@ export default function SkillsSection() {
                 ? "bg-gradient-to-br from-white/5 to-white/10 border-white/10 shadow-2xl"
                 : "bg-gradient-to-br from-white/80 to-white/60 border-white/30 shadow-2xl"
             }`}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.02, y: -8 }}
-            transition={{ duration: 0.4 }}
+          
+          
+          
           >
             {/* Card Glow Effect */}
             <motion.div
@@ -341,10 +260,8 @@ export default function SkillsSection() {
 
             <motion.div
               className="flex items-center mb-10"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
+       
+          
             >
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mr-5 shadow-lg">
                 <svg
@@ -366,7 +283,7 @@ export default function SkillsSection() {
 
             <motion.div
               className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8"
-              variants={containerVariants}
+              
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -379,13 +296,8 @@ export default function SkillsSection() {
                       ? "bg-white/5 hover:bg-white/15 border border-white/10 hover:border-white/30"
                       : "bg-black/5 hover:bg-black/15 border border-black/10 hover:border-black/30"
                   }`}
-                  variants={itemVariants}
-                  whileHover={{
-                    scale: 1.08,
-                    y: -15,
-                    rotateX: 8,
-                    transition: { duration: 0.4, ease: "easeOut" },
-                  }}
+                  
+                 
                   whileTap={{ scale: 0.95 }}
                 >
                   {/* Glow effect */}
@@ -394,14 +306,8 @@ export default function SkillsSection() {
                     initial={false}
                   />
 
-                  <div className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 mb-6">
-                    <Image
-                      src={skill.icon || "/placeholder.svg"}
-                      alt={t(skill.name)}
-                      fill
-                      className="object-contain transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-lg"
-                      crossOrigin="anonymous"
-                    />
+                  <div className="relative z-10  mb-3">
+                    {skill.icon}
                   </div>
 
                   <h4
