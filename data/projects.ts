@@ -448,7 +448,7 @@ I’ve just finished building a production-ready, plug-and-play RESTful API desi
       "JWT",
     ],
     image:
-      "https://collection.cloudinary.com/dlvhfrkgt/3159ff21d5187b2c4c2096a1a8eefe88",
+      "https://res.cloudinary.com/dlvhfrkgt/image/upload/v1762865837/Screenshot_46_vdlh7d.png",
     codeLink: "https://github.com/fouadmo1223/Chat-Frontend",
     demoLink: "https://chat-frontend-lovat-eight.vercel.app/",
     type: "code-demo" as const,
